@@ -71,6 +71,7 @@ python -m venv .venv
 - [docs/项目说明书-v3.0.md](docs/项目说明书-v3.0.md)
 - [docs/数据冻结与开发就绪报告.md](docs/数据冻结与开发就绪报告.md)
 - [docs/开发进展-多模式图与等时圈试点.md](docs/开发进展-多模式图与等时圈试点.md)
+- [docs/design-guidelines.md](docs/design-guidelines.md) —— 做前端页面之前读
 - [docs/数据字典-v1.md](docs/数据字典-v1.md)
 
 ## 已知限制
