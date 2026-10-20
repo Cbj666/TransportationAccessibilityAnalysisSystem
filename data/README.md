@@ -25,14 +25,47 @@ data/
 ## 不进库的东西怎么给组员
 
 `data/raw/`（12 GB）和 `data/interim/amap_pilot/`、`data/cache/` 体积太大，
-走共享盘/网盘分发，目录结构保持一致即可。
+走共享盘/网盘/U 盘分发，**目录结构保持一致**即可。
 
-推荐分发方式（任选其一）：
+按需要的程度分三档，别一股脑全发：
 
-1. **网盘**：打包 `data/raw` + `data/cache` + `data/interim/amap_pilot` 一次发全；
-2. **GitHub Release**：打成分卷压缩包（每个 < 2 GB），放在仓库的 Release 里；
-3. **只给 v1**：如果组员只写前端/后端接口、不重建数据，只要 `data/processed/v1/` 就够，
-   这个目录在仓库里。
+| 组员要做的事 | 需要拷什么 | 体积 |
+|---|---|---:|
+| 只写前端 / 只写接口 | 什么都不用拷，仓库里的 `processed/v1/` 够用 | 0 |
+| 跑算法、改参数、复现等时圈 | 同上（v1 在仓库里，`build_graph.py` 6 秒重建图） | 0 |
+| 重建 v1、改数据清洗逻辑 | `data/raw/` + `data/interim/amap_pilot/`（`interim/` 的合并表已在仓库） | ~12.1 GB |
+
+### 拷完先校验
+
+`data/raw-inputs.sha256` 已入库，覆盖重建 v1 必需的文件（19 个，0.43 GB）：
+
+```bash
+# 在 data/raw/ 目录下执行（Git Bash / WSL / macOS）
+sha256sum -c ../raw-inputs.sha256
+```
+
+Windows PowerShell 逐个比对：
+
+```powershell
+Get-Content data\raw-inputs.sha256 | ForEach-Object {
+  $hash, $size, $rel = $_ -split '  ', 3
+  $f = Join-Path 'data\raw' $rel
+  $ok = (Get-FileHash $f -Algorithm SHA256).Hash -eq $hash
+  "{0}  {1}" -f $(if ($ok) { 'OK  ' } else { 'FAIL' }), $rel
+}
+```
+
+校验不通过就是拷贝不完整或版本不一致，**不要开始重建**——否则
+`prepare_dataset.py` 会安静地产出一份数据不对的 v1。
+
+重新生成清单（raw 数据更新后）：
+
+```powershell
+.\.venv\Scripts\python.exe backend\scripts\make_raw_manifest.py
+```
+
+> 11 GB 的 `raw/cptond/`（中国交通数据网）不参与任何流程，清单里刻意跳过；
+> 需要时再单独拷。
 
 ## 重建流程
 
