@@ -75,7 +75,7 @@ $env:PYTHONUNBUFFERED='1'
 
 ## 4. 数据契约（v1）
 
-字段级说明见 `data/processed/v1/DATA_DICTIONARY.md`，这里只列最容易搞错的：
+字段级说明见 `docs/数据字典-v1.md`，这里只列最容易搞错的：
 
 | 事实 | 说明 |
 |---|---|
@@ -190,7 +190,7 @@ walk 顶点  <-> 站点          接驳距离 / 1.2 m/s
 | `docs/项目说明书-v3.0.md` | 答辩口径、功能边界 |
 | `docs/数据冻结与开发就绪报告.md` | 数据怎么来的、校验结论 |
 | `docs/开发进展-多模式图与等时圈试点.md` | 算法怎么实现的、参数、试点结果 |
-| `data/processed/v1/DATA_DICTIONARY.md` | 每个字段的含义 |
+| `docs/数据字典-v1.md` | 每个字段的含义 |
 | `README.md` | 新成员第一次进门 |
 
 **改结构时同步更新这份 AGENTS.md 与 `项目进度与交接说明.md` 的路径表。**

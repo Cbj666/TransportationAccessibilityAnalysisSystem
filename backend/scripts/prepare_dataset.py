@@ -1,22 +1,27 @@
 # -*- coding: utf-8 -*-
 r"""Freeze the validated inputs into a versioned dataset for development.
+
 Inputs  (read-only, never modified)
     data/interim/**                      Amap bus + metro tables (591 lines / 9 metro lines)
-    武汉市_市.geojson                      Wuhan admin boundary (EPSG:4490)
-    hubei-261013-free-OpenMap/hubei.gpkg OSM Hubei extract (roads, POIs)
+    data/raw/boundary/武汉市_市.geojson    Wuhan admin boundary (EPSG:4490)
+    data/raw/hubei/hubei-261013-free-OpenMap/hubei.gpkg
+                                         OSM Hubei extract (roads, POIs)
 
-Outputs data/processed/v1/
+Outputs data/processed/v1/   (the directory is WIPED and regenerated every run)
     wuhan_boundary.geojson
     stops_bus.csv / stops_metro.csv
     edges_bus.csv  / edges_metro.csv
     routes_bus.geojson / routes_metro.geojson
     metro_schedule.csv
+    bus_route_stops.csv / metro_route_stops.csv
     osm_walk_roads.gpkg      (layer walk_roads)
-    poi.gpkg                 (layer poi)
+    poi.gpkg                 (layer poi_points / poi_areas)
     manifest.json
-    DATA_DICTIONARY.md
 
-Run:  .\.venv\Scripts\python.exe scripts\prepare_dataset.py
+The field-level documentation lives in docs/数据字典-v1.md — deliberately outside
+this directory so that a rebuild does not delete it.
+
+Run:  .\.venv\Scripts\python.exe backend\scripts\prepare_dataset.py
 """
 from __future__ import annotations
 

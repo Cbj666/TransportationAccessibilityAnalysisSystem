@@ -1,7 +1,7 @@
 {
   "dataset": "wuhan-isochrone-inputs",
   "version": "v1",
-  "generated_at": "2026-10-20T16:43:17+08:00",
+  "generated_at": "2026-10-20T16:48:01+08:00",
   "crs": "EPSG:4326",
   "metric_crs": "EPSG:32650",
   "study_area": {
@@ -112,7 +112,7 @@
     {
       "name": "osm_walk_roads.gpkg",
       "bytes": 36020224,
-      "sha256": "36c0dc70fb6ec6171d0bf9cd5239599e9faf3ff23b5aa2dc2b8756c9e93d31a2",
+      "sha256": "57c739f083d0844e38d9b06f24b6aa4532cb575361de71908e11f6be49fe32f5",
       "layers": {
         "walk_roads": 91203
       },
@@ -121,7 +121,7 @@
     {
       "name": "poi.gpkg",
       "bytes": 6197248,
-      "sha256": "e09b2c79bd0daf7b1492e7264a4d6a0e597e9179cd637d15b3b2bce52e0e13ca",
+      "sha256": "3957c1149e585f792297289c2ffa5ed661318187fa2bc80574627374a478f427",
       "layers": {
         "poi_points": 14154,
         "poi_areas": 7768
