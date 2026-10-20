@@ -1,0 +1,31 @@
+{
+  "public_lines": 9,
+  "matched_directions": 18,
+  "route_stop_records": 534,
+  "unique_stations": 231,
+  "edges": 516,
+  "shapes": 18,
+  "schedule_rows": 56,
+  "line_direction_counts": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "6": 2,
+    "7": 2,
+    "8": 2,
+    "11": 2,
+    "阳逻线": 2
+  },
+  "public_station_counts": {
+    "1": 32,
+    "2": 38,
+    "3": 24,
+    "4": 37,
+    "6": 27,
+    "7": 26,
+    "8": 15,
+    "11": 13,
+    "阳逻线": 16
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "line": "H82路",
+  "stations": 54,
+  "roads_in_bbox": 1069,
+  "avg_snap_distance_m": 3.32,
+  "max_snap_distance_m": 14.3,
+  "snap_gt_80m": 0,
+  "first_station": "新城十五路公交场站",
+  "last_station": "新城十五路公交场站"
+}

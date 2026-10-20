@@ -1,0 +1,162 @@
+{
+  "dataset": "wuhan-isochrone-inputs",
+  "version": "v1",
+  "generated_at": "2026-10-20T16:43:17+08:00",
+  "crs": "EPSG:4326",
+  "metric_crs": "EPSG:32650",
+  "study_area": {
+    "name": "武汉市",
+    "area_km2": 8588.17
+  },
+  "source_files": {
+    "boundary": "data\\raw\\boundary\\武汉市_市.geojson",
+    "amap_bus": "data\\interim\\amap_bus_stations_snapped.csv",
+    "amap_metro": "data\\interim\\amap_metro\\metro_stations_snapped.csv",
+    "osm": "data\\raw\\hubei\\hubei-261013-free-OpenMap\\hubei.gpkg"
+  },
+  "parameters": {
+    "road_buffer_m": 2000.0,
+    "walkable_fclass": [
+      "bridleway",
+      "cycleway",
+      "footway",
+      "living_street",
+      "path",
+      "pedestrian",
+      "primary",
+      "primary_link",
+      "residential",
+      "road",
+      "secondary",
+      "secondary_link",
+      "service",
+      "steps",
+      "tertiary",
+      "tertiary_link",
+      "track",
+      "track_grade1",
+      "track_grade2",
+      "track_grade3",
+      "track_grade4",
+      "track_grade5",
+      "trunk",
+      "trunk_link",
+      "unclassified"
+    ],
+    "foot_only_fclass": [
+      "footway",
+      "path",
+      "pedestrian",
+      "steps"
+    ],
+    "poi_categories": [
+      "餐饮",
+      "购物",
+      "教育",
+      "医疗",
+      "金融",
+      "政府公共",
+      "休闲旅游",
+      "交通设施",
+      "住宿",
+      "宗教",
+      "自然",
+      "其他"
+    ]
+  },
+  "coverage": {
+    "bus_lines_available": 591,
+    "bus_lines_missing": 103,
+    "bus_directions": 1054,
+    "bus_stops": 7823,
+    "bus_edges": 26248,
+    "metro_lines": 9,
+    "metro_directions": 18,
+    "metro_stations": 231,
+    "metro_edges": 516,
+    "walk_road_segments": 91203,
+    "walk_road_km": 47051.2,
+    "poi_total": 14154
+  },
+  "files": [
+    {
+      "name": "bus_route_stops.csv",
+      "bytes": 5461917,
+      "sha256": "83eb747c187a1b349049442a007817d1f78e0b744e4b77ec566965e4a5b371a3",
+      "rows": 27303
+    },
+    {
+      "name": "edges_bus.csv",
+      "bytes": 6940583,
+      "sha256": "9e7b3cf99550185b04119176bcb8a7f32214471aed50762c1db1868a191da358",
+      "rows": 26248
+    },
+    {
+      "name": "edges_metro.csv",
+      "bytes": 94544,
+      "sha256": "f566f565e5ca66a5d1297f214d2dd454c47aa9e9b378b53ad2db72eea6c33d81",
+      "rows": 516
+    },
+    {
+      "name": "metro_route_stops.csv",
+      "bytes": 85320,
+      "sha256": "35d7511ca7b7e2fa86601af1965132841fa07064a70eaf9c8f1da355d9cbc732",
+      "rows": 534
+    },
+    {
+      "name": "metro_schedule.csv",
+      "bytes": 8954,
+      "sha256": "c376f44218d7d738aeeacefa2eaf3ae5e50afb79c6cdefe28d0a8d2b280974cf",
+      "rows": 56
+    },
+    {
+      "name": "osm_walk_roads.gpkg",
+      "bytes": 36020224,
+      "sha256": "36c0dc70fb6ec6171d0bf9cd5239599e9faf3ff23b5aa2dc2b8756c9e93d31a2",
+      "layers": {
+        "walk_roads": 91203
+      },
+      "features": 91203
+    },
+    {
+      "name": "poi.gpkg",
+      "bytes": 6197248,
+      "sha256": "e09b2c79bd0daf7b1492e7264a4d6a0e597e9179cd637d15b3b2bce52e0e13ca",
+      "layers": {
+        "poi_points": 14154,
+        "poi_areas": 7768
+      },
+      "features": 21922
+    },
+    {
+      "name": "routes_bus.geojson",
+      "bytes": 4089621,
+      "sha256": "15312664068e699e146caf517bebfef5b3cb518a5a8c1f17ee50e360cacb38a4",
+      "features": 1124
+    },
+    {
+      "name": "routes_metro.geojson",
+      "bytes": 418582,
+      "sha256": "812c0a47b7adb5f594f01909dbb2ad76438e9fb3e9f992be6c7e31efdb1443db",
+      "features": 18
+    },
+    {
+      "name": "stops_bus.csv",
+      "bytes": 1395289,
+      "sha256": "c6425d4b637aa210ed013188454762ffbf8442390c993f2371d80fa0d4c91bdf",
+      "rows": 7823
+    },
+    {
+      "name": "stops_metro.csv",
+      "bytes": 33063,
+      "sha256": "79906267396840c7550ef4b519742462d7803525bc6011987268bb451b246a18",
+      "rows": 231
+    },
+    {
+      "name": "wuhan_boundary.geojson",
+      "bytes": 10212,
+      "sha256": "5cfaa2d9c59f96c3d36cbe6b13bc5fff7545d303941bc1ee47d063714146fbf6",
+      "features": 1
+    }
+  ]
+}

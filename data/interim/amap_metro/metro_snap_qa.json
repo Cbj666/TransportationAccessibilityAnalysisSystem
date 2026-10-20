@@ -1,0 +1,8 @@
+{
+  "stations": 231,
+  "high_quality": 224,
+  "low_quality": 7,
+  "snap_median_m": 4.9,
+  "snap_p90_m": 33.8,
+  "snap_max_m": 154.8
+}

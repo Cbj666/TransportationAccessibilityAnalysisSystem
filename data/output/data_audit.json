@@ -1,0 +1,273 @@
+{
+  "boundary": {
+    "rows": 1,
+    "source_crs": "EPSG:4490",
+    "geom_types": {
+      "MultiPolygon": 1
+    },
+    "valid": true,
+    "bounds_wgs84": [
+      113.698077,
+      29.971928,
+      115.076651,
+      31.362866
+    ],
+    "area_km2": 11626.15
+  },
+  "bus_stations": {
+    "rows": 7823,
+    "unique_station_key": 7823,
+    "dup_station_key": 0,
+    "unique_raw_station_id": 6615,
+    "null_snap": 0,
+    "outside_wuhan": 91,
+    "snap_quality": {
+      "high": 7351,
+      "low": 472
+    },
+    "snap_distance_m": {
+      "median": 2.9,
+      "p95": 335.3,
+      "max": 3505.9
+    },
+    "bounds_wgs84": [
+      113.762275,
+      30.210626,
+      114.808191,
+      31.334688
+    ],
+    "line_count_sum": 27168
+  },
+  "bus_edges": {
+    "rows": 26248,
+    "lines": 1054,
+    "dangling_from_key": 0,
+    "dangling_to_key": 0,
+    "self_loops": 0,
+    "dup_line_seq": 0,
+    "nonpositive_distance": 0,
+    "distance_m": {
+      "min": 15.4,
+      "median": 525.2,
+      "mean": 652.4,
+      "p95": 1350.5,
+      "max": 47687.1
+    },
+    "gt_3000m": 248,
+    "gt_5000m": 69,
+    "gt_10000m": 24
+  },
+  "bus_route_stops": {
+    "rows": 27303,
+    "lines": 1054,
+    "directions": 1054,
+    "null_station_key": 0,
+    "dup_line_seq": 0,
+    "seq_min": 1,
+    "seq_max": 82
+  },
+  "bus_shapes": {
+    "rows": 1124,
+    "crs": "EPSG:4326",
+    "geom_types": {
+      "LineString": 1124
+    },
+    "valid": true,
+    "empty_geom": 0,
+    "bounds_wgs84": [
+      113.762275,
+      30.2106,
+      114.809331,
+      31.334841
+    ],
+    "cols": [
+      "label",
+      "line_id",
+      "line_name",
+      "start_stop",
+      "end_stop",
+      "distance_km",
+      "loop",
+      "point_count",
+      "geometry"
+    ]
+  },
+  "metro_stations": {
+    "rows": 231,
+    "unique_station_id": 231,
+    "null_snap": 0,
+    "snap_quality": {
+      "high": 224,
+      "low": 7
+    },
+    "snap_distance_m": {
+      "median": 4.9,
+      "max": 154.8
+    },
+    "line_count_hist": {
+      "2": 197,
+      "4": 32,
+      "6": 2
+    }
+  },
+  "metro_edges": {
+    "rows": 516,
+    "directions": 18,
+    "dangling_from": 0,
+    "dangling_to": 0,
+    "self_loops": 0,
+    "distance_m": {
+      "min": 558.3,
+      "median": 1313.4,
+      "max": 5395.7
+    }
+  },
+  "metro_schedule": {
+    "rows": 56,
+    "lines": 18,
+    "day_types": {
+      "weekday": 38,
+      "weekend": 18
+    },
+    "period_types": {
+      "base": 56
+    },
+    "interval_s_range": [
+      180,
+      600
+    ],
+    "interval_s_median": 360
+  },
+  "bus_metro_proximity": {
+    "bus_stops_within_50m": 56,
+    "bus_stops_within_100m": 150,
+    "bus_stops_within_200m": 366,
+    "bus_stops_within_500m": 1126,
+    "bus_stops_within_800m": 2045,
+    "median_nearest_m": 2443.3,
+    "p90_nearest_m": 21392.4,
+    "note": "haversine nearest metro station per bus stop (station centre)"
+  },
+  "osm_inventory": {
+    "bbox_wgs84": [
+      113.69808,
+      29.97193,
+      115.07665,
+      31.36287
+    ],
+    "layers": {
+      "gis_osm_roads_free": {
+        "hubei_total": 271489,
+        "in_bbox": 96535,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name",
+          "ref",
+          "oneway",
+          "maxspeed",
+          "layer",
+          "bridge",
+          "tunnel"
+        ]
+      },
+      "gis_osm_pois_free": {
+        "hubei_total": 5460,
+        "in_bbox": 3066,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name"
+        ]
+      },
+      "gis_osm_pofw_free": {
+        "hubei_total": 56,
+        "in_bbox": 26,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name"
+        ]
+      },
+      "gis_osm_transport_free": {
+        "hubei_total": 5546,
+        "in_bbox": 3294,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name"
+        ]
+      },
+      "gis_osm_places_free": {
+        "hubei_total": 26360,
+        "in_bbox": 15951,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "population",
+          "name"
+        ]
+      },
+      "gis_osm_traffic_free": {
+        "hubei_total": 12400,
+        "in_bbox": 5578,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name",
+          "calming"
+        ]
+      },
+      "gis_osm_railways_free": {
+        "hubei_total": 18164,
+        "in_bbox": 7796,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name",
+          "layer",
+          "bridge",
+          "tunnel"
+        ]
+      },
+      "gis_osm_natural_free": {
+        "hubei_total": 4542,
+        "in_bbox": 3853,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name"
+        ]
+      },
+      "gis_osm_buildings_a_free": {
+        "hubei_total": 142385,
+        "in_bbox": 67108,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name",
+          "type"
+        ]
+      },
+      "gis_osm_adminareas_a_free": {
+        "hubei_total": 686,
+        "in_bbox": 293,
+        "fields": [
+          "osm_id",
+          "code",
+          "fclass",
+          "name"
+        ]
+      }
+    }
+  }
+}

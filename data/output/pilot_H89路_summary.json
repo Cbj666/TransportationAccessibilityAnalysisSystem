@@ -1,0 +1,17 @@
+{
+  "line": "H89路",
+  "station_count": 56,
+  "resolved_count": 56,
+  "high_confidence": 32,
+  "medium_confidence": 18,
+  "low_confidence": 6,
+  "unresolved": 0,
+  "network_ready": 50,
+  "roads_in_bbox": 1941,
+  "avg_snap_distance_m": 5.9,
+  "max_snap_distance_m": 46.2,
+  "snap_gt_80m": 0,
+  "avg_leg_distance_m": 718.5,
+  "max_leg_distance_m": 3325.2,
+  "flagged_rows": 22
+}

@@ -1,0 +1,23 @@
+{
+  "route_records": 27303,
+  "public_lines": 591,
+  "line_ids": 1054,
+  "unique_stations": 7823,
+  "original_station_ids": 6615,
+  "station_ids_split_by_location": 1156,
+  "stations_inside_wuhan": 7732,
+  "stations_outside_wuhan": 91,
+  "edges": 26248,
+  "edges_gt_3000m": 248,
+  "edges_gt_5000m": 69,
+  "edges_gt_10000m": 24,
+  "max_leg_m": 47687.1,
+  "snap_median_m": 2.9,
+  "snap_p90_m": 11.1,
+  "snap_p95_m": 335.3,
+  "snap_avg_m": 66.95,
+  "snap_max_m": 3505.9,
+  "snap_gt_80m": 472,
+  "snap_gt_500m": 347,
+  "station_coord_spread_gt_50m": 509
+}

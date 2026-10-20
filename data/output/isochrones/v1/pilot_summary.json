@@ -1,0 +1,459 @@
+{
+  "generated_at": "2026-10-20T16:42:54+0800",
+  "dataset_version": "v1",
+  "params": {
+    "walk_speed_mps": 1.2,
+    "walk_access_max_m": 800.0,
+    "bus_speed_mps": 4.5,
+    "bus_dwell_s": 25.0,
+    "bus_wait_s": 480.0,
+    "metro_speed_mps": 9.5,
+    "metro_dwell_s": 35.0,
+    "metro_wait_fallback_s": 240.0,
+    "transfer_penalty_s": 90.0,
+    "hull_buffer_m": 60.0,
+    "hull_simplify_m": 40.0,
+    "hull_max_points": 80000
+  },
+  "graph": {
+    "n_nodes": 1015242,
+    "n_walk_nodes": 979351,
+    "n_bus_stops": 7823,
+    "n_metro_stops": 231,
+    "n_platforms": 27837,
+    "n_edges": 2174254,
+    "n_directed_walk": 2076810,
+    "access_median_m": 30.49,
+    "access_max_m": 1219.73,
+    "access_dropped": 24,
+    "walk_components": 310,
+    "walk_largest_component": 967188
+  },
+  "points": [
+    {
+      "slug": "wuda",
+      "label": "武汉大学（八一路珞珈山）",
+      "lng": 114.354658,
+      "lat": 30.534155,
+      "origin_snap_m": 6.3,
+      "budgets": [
+        {
+          "budget_min": 15,
+          "area_km2": 2.31,
+          "bus_stops_reached": 16,
+          "metro_stations_reached": 1,
+          "poi_total": 595,
+          "poi_by_category": {
+            "休闲旅游": 183,
+            "餐饮": 151,
+            "其他": 73,
+            "购物": 62,
+            "政府公共": 50,
+            "交通设施": 25,
+            "金融": 14,
+            "教育": 14,
+            "医疗": 12,
+            "住宿": 11
+          }
+        },
+        {
+          "budget_min": 30,
+          "area_km2": 14.75,
+          "bus_stops_reached": 85,
+          "metro_stations_reached": 18,
+          "poi_total": 1414,
+          "poi_by_category": {
+            "休闲旅游": 520,
+            "餐饮": 302,
+            "购物": 139,
+            "其他": 102,
+            "交通设施": 93,
+            "政府公共": 90,
+            "教育": 52,
+            "住宿": 49,
+            "医疗": 34,
+            "金融": 32,
+            "宗教": 1
+          }
+        },
+        {
+          "budget_min": 45,
+          "area_km2": 67.37,
+          "bus_stops_reached": 365,
+          "metro_stations_reached": 58,
+          "poi_total": 2493,
+          "poi_by_category": {
+            "休闲旅游": 918,
+            "餐饮": 429,
+            "交通设施": 278,
+            "购物": 242,
+            "其他": 146,
+            "政府公共": 145,
+            "教育": 139,
+            "住宿": 82,
+            "医疗": 60,
+            "金融": 50,
+            "宗教": 4
+          }
+        }
+      ],
+      "nested": true,
+      "examples": [
+        {
+          "target": "M-BV11475175",
+          "total_min": 12.0,
+          "legs": [
+            {
+              "mode": "接驳步行",
+              "seconds": 5.1,
+              "from": "walk:296596",
+              "to": "B-BV10059620"
+            },
+            {
+              "mode": "候车",
+              "seconds": 480.0,
+              "from": "B-BV10059620",
+              "to": "P-bus-420100013786-25"
+            },
+            {
+              "mode": "公交乘车",
+              "seconds": 207.3,
+              "from": "P-bus-420100013786-25",
+              "to": "P-bus-420100013786-26"
+            },
+            {
+              "mode": "下车",
+              "seconds": 0.0,
+              "from": "P-bus-420100013786-26",
+              "to": "B-BV10058641"
+            },
+            {
+              "mode": "接驳步行",
+              "seconds": 30.1,
+              "from": "B-BV10058641",
+              "to": "M-BV11475175"
+            }
+          ]
+        },
+        {
+          "target": "M-BV10060896",
+          "total_min": 29.9,
+          "legs": [
+            {
+              "mode": "步行",
+              "seconds": 1017.8,
+              "from": "walk:296596",
+              "to": "walk:286424"
+            },
+            {
+              "mode": "接驳步行",
+              "seconds": 7.1,
+              "from": "walk:286424",
+              "to": "M-BV10057878"
+            },
+            {
+              "mode": "候车",
+              "seconds": 240.0,
+              "from": "M-BV10057878",
+              "to": "P-metro-420100024405-24"
+            },
+            {
+              "mode": "地铁乘车",
+              "seconds": 527.0,
+              "from": "P-metro-420100024405-24",
+              "to": "P-metro-420100024405-27"
+            },
+            {
+              "mode": "下车",
+              "seconds": 0.0,
+              "from": "P-metro-420100024405-27",
+              "to": "M-BV10060896"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "guanggu",
+      "label": "光谷广场",
+      "lng": 114.3965,
+      "lat": 30.5055,
+      "origin_snap_m": 92.4,
+      "budgets": [
+        {
+          "budget_min": 15,
+          "area_km2": 2.16,
+          "bus_stops_reached": 15,
+          "metro_stations_reached": 3,
+          "poi_total": 133,
+          "poi_by_category": {
+            "餐饮": 43,
+            "交通设施": 22,
+            "购物": 20,
+            "休闲旅游": 19,
+            "其他": 13,
+            "政府公共": 6,
+            "金融": 4,
+            "教育": 3,
+            "医疗": 2,
+            "住宿": 1
+          }
+        },
+        {
+          "budget_min": 30,
+          "area_km2": 17.33,
+          "bus_stops_reached": 104,
+          "metro_stations_reached": 17,
+          "poi_total": 685,
+          "poi_by_category": {
+            "休闲旅游": 243,
+            "餐饮": 118,
+            "交通设施": 102,
+            "购物": 51,
+            "政府公共": 44,
+            "其他": 37,
+            "教育": 37,
+            "金融": 23,
+            "住宿": 16,
+            "医疗": 14
+          }
+        },
+        {
+          "budget_min": 45,
+          "area_km2": 78.22,
+          "bus_stops_reached": 399,
+          "metro_stations_reached": 54,
+          "poi_total": 1893,
+          "poi_by_category": {
+            "休闲旅游": 741,
+            "交通设施": 297,
+            "餐饮": 275,
+            "购物": 137,
+            "教育": 115,
+            "政府公共": 112,
+            "其他": 74,
+            "金融": 52,
+            "住宿": 49,
+            "医疗": 39,
+            "宗教": 2
+          }
+        }
+      ],
+      "nested": true,
+      "examples": [
+        {
+          "target": "M-BV10890085",
+          "total_min": 6.8,
+          "legs": [
+            {
+              "mode": "步行",
+              "seconds": 388.9,
+              "from": "walk:344905",
+              "to": "walk:347108"
+            },
+            {
+              "mode": "接驳步行",
+              "seconds": 17.0,
+              "from": "walk:347108",
+              "to": "M-BV10890085"
+            }
+          ]
+        },
+        {
+          "target": "M-BV10845601",
+          "total_min": 28.6,
+          "legs": [
+            {
+              "mode": "步行",
+              "seconds": 388.9,
+              "from": "walk:344905",
+              "to": "walk:347108"
+            },
+            {
+              "mode": "接驳步行",
+              "seconds": 17.0,
+              "from": "walk:347108",
+              "to": "M-BV10890085"
+            },
+            {
+              "mode": "候车",
+              "seconds": 240.0,
+              "from": "M-BV10890085",
+              "to": "P-metro-420100024404-10"
+            },
+            {
+              "mode": "地铁乘车",
+              "seconds": 95.6,
+              "from": "P-metro-420100024404-10",
+              "to": "P-metro-420100024404-11"
+            },
+            {
+              "mode": "下车",
+              "seconds": 0.0,
+              "from": "P-metro-420100024404-11",
+              "to": "M-BV10060895"
+            },
+            {
+              "mode": "候车",
+              "seconds": 240.0,
+              "from": "M-BV10060895",
+              "to": "P-metro-900000073743-8"
+            },
+            {
+              "mode": "地铁乘车",
+              "seconds": 732.3,
+              "from": "P-metro-900000073743-8",
+              "to": "P-metro-900000073743-11"
+            },
+            {
+              "mode": "下车",
+              "seconds": 0.0,
+              "from": "P-metro-900000073743-11",
+              "to": "M-BV10845601"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hankou_station",
+      "label": "汉口火车站",
+      "lng": 114.2538,
+      "lat": 30.6185,
+      "origin_snap_m": 25.7,
+      "budgets": [
+        {
+          "budget_min": 15,
+          "area_km2": 2.37,
+          "bus_stops_reached": 19,
+          "metro_stations_reached": 3,
+          "poi_total": 30,
+          "poi_by_category": {
+            "交通设施": 7,
+            "政府公共": 6,
+            "教育": 5,
+            "医疗": 3,
+            "休闲旅游": 3,
+            "住宿": 3,
+            "购物": 2,
+            "餐饮": 1
+          }
+        },
+        {
+          "budget_min": 30,
+          "area_km2": 21.17,
+          "bus_stops_reached": 189,
+          "metro_stations_reached": 33,
+          "poi_total": 232,
+          "poi_by_category": {
+            "休闲旅游": 74,
+            "教育": 43,
+            "交通设施": 26,
+            "政府公共": 25,
+            "餐饮": 21,
+            "购物": 17,
+            "医疗": 11,
+            "住宿": 10,
+            "金融": 3,
+            "其他": 2
+          }
+        },
+        {
+          "budget_min": 45,
+          "area_km2": 93.73,
+          "bus_stops_reached": 691,
+          "metro_stations_reached": 97,
+          "poi_total": 974,
+          "poi_by_category": {
+            "休闲旅游": 297,
+            "教育": 188,
+            "交通设施": 136,
+            "政府公共": 81,
+            "餐饮": 68,
+            "购物": 63,
+            "金融": 38,
+            "医疗": 36,
+            "住宿": 33,
+            "其他": 28,
+            "宗教": 6
+          }
+        }
+      ],
+      "nested": true,
+      "examples": [
+        {
+          "target": "M-BV10057987",
+          "total_min": 7.5,
+          "legs": [
+            {
+              "mode": "步行",
+              "seconds": 445.1,
+              "from": "walk:182510",
+              "to": "walk:179117"
+            },
+            {
+              "mode": "接驳步行",
+              "seconds": 3.6,
+              "from": "walk:179117",
+              "to": "M-BV10057987"
+            }
+          ]
+        },
+        {
+          "target": "M-BV10570923",
+          "total_min": 29.8,
+          "legs": [
+            {
+              "mode": "步行",
+              "seconds": 445.1,
+              "from": "walk:182510",
+              "to": "walk:179117"
+            },
+            {
+              "mode": "接驳步行",
+              "seconds": 3.6,
+              "from": "walk:179117",
+              "to": "M-BV10057987"
+            },
+            {
+              "mode": "候车",
+              "seconds": 240.0,
+              "from": "M-BV10057987",
+              "to": "P-metro-420100024404-28"
+            },
+            {
+              "mode": "地铁乘车",
+              "seconds": 397.8,
+              "from": "P-metro-420100024404-28",
+              "to": "P-metro-420100024404-30"
+            },
+            {
+              "mode": "下车",
+              "seconds": 0.0,
+              "from": "P-metro-420100024404-30",
+              "to": "M-BV10060890"
+            },
+            {
+              "mode": "候车",
+              "seconds": 180.0,
+              "from": "M-BV10060890",
+              "to": "P-metro-420100024335-23"
+            },
+            {
+              "mode": "地铁乘车",
+              "seconds": 522.1,
+              "from": "P-metro-420100024335-23",
+              "to": "P-metro-420100024335-26"
+            },
+            {
+              "mode": "下车",
+              "seconds": 0.0,
+              "from": "P-metro-420100024335-26",
+              "to": "M-BV10570923"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

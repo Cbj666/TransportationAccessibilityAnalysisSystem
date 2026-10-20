@@ -1,0 +1,19 @@
+# 统一换行，避免 Windows/Mac 协作时整文件 diff
+* text=auto eol=lf
+
+# 二进制
+*.docx binary
+*.xlsx binary
+*.png binary
+*.jpg binary
+*.gpkg binary
+*.pbf binary
+*.zip binary
+*.pdf binary
+
+# 代码与文档
+*.py  text eol=lf
+*.md  text eol=lf
+*.csv text eol=lf
+*.geojson text eol=lf
+*.json text eol=lf

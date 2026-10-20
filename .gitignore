@@ -1,0 +1,40 @@
+# ---------- 密钥 ----------
+.env
+.env.*
+!.env.example
+AK.txt
+*.key
+
+# ---------- Python ----------
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# ---------- IDE / 系统 ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 前端 ----------
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ---------- 大体积原始数据（不进库，见 data/README.md） ----------
+data/raw/
+data/cache/
+vendor/
+data/interim/amap_pilot/
+
+# ---------- 可重建的中间产物 ----------
+data/processed/graph/
+*.log
+*.zip
+*.pbf
+*.7z

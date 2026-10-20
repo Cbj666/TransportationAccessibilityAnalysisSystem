@@ -1,0 +1,10 @@
+{
+  "line": "340路",
+  "stations": 24,
+  "roads_in_bbox": 8263,
+  "avg_snap_distance_m": 2.1,
+  "max_snap_distance_m": 9.3,
+  "snap_gt_80m": 0,
+  "first_station": "秦云路荷叶山社区",
+  "last_station": "天鹅路茶港"
+}

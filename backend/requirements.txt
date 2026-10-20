@@ -1,0 +1,17 @@
+# 运行 backend/ 所需依赖（Python 3.13，已在 .venv 中验证）
+# 安装：.\.venv\Scripts\python.exe -m pip install -r backend\requirements.txt
+
+numpy>=2.0,<3
+pandas>=2.2,<4
+geopandas>=1.0,<2
+shapely>=2.0,<3
+pyogrio>=0.9
+pyproj>=3.6,<4
+scipy>=1.13,<2
+networkx>=3.2,<4
+matplotlib>=3.8,<4
+requests>=2.31,<3
+
+# 后端接口（尚未启用；装上即可开始包 API）
+# fastapi>=0.115
+# uvicorn[standard]>=0.30

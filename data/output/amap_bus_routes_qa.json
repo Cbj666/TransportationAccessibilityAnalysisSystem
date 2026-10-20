@@ -1,0 +1,7 @@
+{
+  "route_shapes": 1124,
+  "empty_polyline_directions": 0,
+  "total_points": 414038,
+  "geojson": "E:\\MyProject\\等时圈交通可达性分析系统\\data\\interim\\amap_bus_routes.geojson",
+  "overview": "E:\\MyProject\\等时圈交通可达性分析系统\\data\\output\\amap_bus_routes_overview.png"
+}

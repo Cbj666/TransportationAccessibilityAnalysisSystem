@@ -1,0 +1,17 @@
+{
+  "line": "340路",
+  "station_count": 23,
+  "resolved_count": 23,
+  "high_confidence": 23,
+  "medium_confidence": 0,
+  "low_confidence": 0,
+  "unresolved": 0,
+  "network_ready": 23,
+  "roads_in_bbox": 8371,
+  "avg_snap_distance_m": 2.5,
+  "max_snap_distance_m": 6.4,
+  "snap_gt_80m": 0,
+  "avg_leg_distance_m": 617.4,
+  "max_leg_distance_m": 2351.5,
+  "flagged_rows": 0
+}
